@@ -1,0 +1,4 @@
+.payPage div,.payPage h2
+{
+    min-width: max-content;
+}

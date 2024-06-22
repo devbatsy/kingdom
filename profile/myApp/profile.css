@@ -1,0 +1,39 @@
+.profileMenu
+{
+	width:30%;
+}
+.profileContent
+{
+	width: 70%;
+}
+@media  screen and (max-width:1000px)
+{
+	.info_wrap
+	{
+		flex-direction: column;	
+		/* pointer-events: none; */
+	}
+}
+@media  screen and (max-width:900px) {
+	.profileMenu,.profileContent
+	{
+		width:100%;
+	}
+	#profileService
+	{
+		flex-direction: column;
+	}
+}
+/* @media screen and (max-width:600px){
+	.serviceFont
+	{
+		font-size: 14px;
+	}
+	.priceFont
+	{
+		font-size: 12px;
+	}
+} */
+/* @media screen and (max-width:400px){
+
+} */

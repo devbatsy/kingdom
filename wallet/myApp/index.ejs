@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+		<!-- <script src="https://kit.fontawesome.com/ae60a47ee9.js" crossorigin="anonymous"></script> -->
+		<title>sydDom project</title>
+		<link rel="stylesheet" href="./wallet.css">
+		<link rel="stylesheet" href="../../routePages/R_css.css">
+	</head>
+	<body>
+		<!-- <input type="color" name="" id=""> -->
+		<div id="root" ></div>
+		<script>
+			const id = "<%=customer_id%>"
+			const navIndex = '<%=navIndex%>'
+			const clientName = '<%=username%>'
+			let menuBtn,
+			updateInput,
+			submitPayment,
+			pay,
+			pending,
+			ws
+		</script>
+		<script type="module" src="../../routePages/component-wallet.js"></script>
+		<script type="module" src="services-wallet.js"></script>
+		<script src="https://newwebpay.interswitchng.com/inline-checkout.js'"></script>
+		<!-- <script src="./bank.js"></script> -->
+	</body>
+</html>

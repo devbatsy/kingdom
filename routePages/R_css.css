@@ -1,0 +1,137 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	outline: none;
+	border: none;
+	resize: none;
+}
+input,select
+{
+	border: 1px solid lightgrey;
+	transition:border linear .3s,box-shadow linear .3s;
+}
+input[type = 'text']:hover,input[type = 'date']:hover,input[type = 'email']:hover,input[type = 'number']:hover,select:hover,input[type = 'password']:hover
+{
+	border:1px solid #2F55DC;
+	box-shadow: 0 1px 6px rgba(0,0,0,.5);
+}
+input:focus
+{
+	border:1px solid #2F55DC;
+	box-shadow: 0 1px 6px rgba(0,0,0,.5);
+}
+.warn input,.warn select
+{
+	border:1px solid #fd2626d3;
+	box-shadow: 0 1px 6px rgba(24, 9, 9, 0.5);
+}
+::-webkit-scrollbar
+{
+    width: 3px;
+    height: 80%;
+	background-color: transparent;
+	/* color:#16192965 */
+}
+::-webkit-scrollbar-track
+{
+    background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:rgba(0, 68, 255, 0.192);
+    width: 3px;
+	border-radius: 20px;
+}
+::-webkit-scrollbar:hover ::-webkit-scrollbar-thumb{
+    width: 3px;
+}
+#container
+{
+	font-size: 16px;
+}
+#sideBar
+{
+	position:relative;
+	min-width:300px;
+	z-index: 200;
+	width: 30%;
+}
+#menuCheck:checked ~ #sideBar
+{
+	transform: translateX(0%);
+}
+#activeProfile::after
+{
+	content:'';
+	height:10px;
+	width:10px;
+	background:inherit;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	bottom:0;
+	right:0
+}
+.select{
+	cursor: pointer;
+	transition: transform linear .3s,background linear .3s;
+}
+.select:active
+{
+	transform: scale(1.05);
+}
+.serviceFont
+{
+	font-size: 18px;
+}
+.menus
+{
+	display: none;
+}
+.sideElement
+{
+	color:#fff;
+	background: unset;
+}
+.sideElement:hover
+{
+	background: #fff;
+	color:#2F55DC
+}
+.rowElements
+{
+    font-size: 12px;
+}
+@media screen and (max-width:450px){
+    .rowElements
+    {
+        font-size: 10px;
+    }
+	#container
+	{
+		font-size: 14px;
+	}
+	h2{
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+@media screen and (max-width:700px) {
+	#sideBar
+	{
+		position:absolute;
+		transform: translateX(-100%);
+		width:100%;
+		max-width:300px;
+		min-width:250px;
+	}
+	.menus
+	{
+		display: block;
+	}
+	#container
+	{
+		font-size: 15px;
+	}
+}
