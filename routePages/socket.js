@@ -1,1 +1,1 @@
-ws = new WebSocket('ws://localhost:8000');
+ws = new WebSocket('ws://kingdom-i1n8.onrender.com');
