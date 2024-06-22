@@ -344,7 +344,7 @@ sydDOM.paymentPage = () =>{
 			createElement('p',{style:'font-family:ubuntu;text-transform:uppercase'},['click the button below to initiate payment']),
 			sydDOM.info_box({name:'merchant_code',type:'text',value:'MX191540',parent:'page2',extras:{d:false}}),
 			sydDOM.info_box({name:'pay_item_id',type:'text',value:'Default_Payable_MX191540',parent:'page2',extras:{d:false}}),
-			sydDOM.info_box({name:'site_redirect_url',type:'text',value:'http://localhost:8000/wallet',parent:'page2',extras:{d:false}}),//REMEBER TO CHANGE THIS TO SERVER URL
+			sydDOM.info_box({name:'site_redirect_url',type:'text',value:'https://kingdom-i1n8.onrender.com/wallet',parent:'page2',extras:{d:false}}),//REMEBER TO CHANGE THIS TO SERVER URL
 			sydDOM.info_box({name:'txn_ref',type:'text',value:id,parent:'page2',extras:{d:false}}),
 			sydDOM.info_box({name:'amount',type:'text',value:convergeString(preState(['payPage','data','page1','refinedInterest'],0)),parent:'page2',extras:{d:false}}),
 			sydDOM.info_box({name:'currency',type:'text',value:'566',parent:'page2',extras:{d:false}}),
