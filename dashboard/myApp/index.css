@@ -1,0 +1,43 @@
+.serviceFont
+{
+	font-size: 18px;
+}
+.priceFont
+{
+	font-size: 14px;
+	font-family: copse;
+}
+.cards
+{
+	width:100%;
+	max-width:300px;
+	min-width:250px;
+}
+.cardImg
+{
+	height:150px
+}
+@media screen and (max-width:600px){
+	.cards
+	{
+		min-width:180px;
+	}
+	.serviceFont
+	{
+		font-size: 14px;
+	}
+	.priceFont
+	{
+		font-size: 12px;
+	}
+	.cardImg
+	{
+		height:100px
+	}
+}
+@media screen and (max-width:400px){
+	.cards
+	{
+		min-width:150px;
+	}
+}
