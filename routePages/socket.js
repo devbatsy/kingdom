@@ -1,1 +1,1 @@
-ws = new WebSocket('ws://kingdom-i1n8.onrender.com');
+ws = new WebSocket('wss://kingdom-i1n8.onrender.com');
